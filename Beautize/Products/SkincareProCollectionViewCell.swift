@@ -22,7 +22,7 @@ class SkincareProCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var backgroundPurple: UIImageView! {
         didSet {
-            backgroundPurple.layer.cornerRadius = 5
+            backgroundPurple.layer.cornerRadius = 10
             backgroundPurple.layer.masksToBounds = true
         }
     }

@@ -9,8 +9,9 @@ import UIKit
 
 class SkincareCatTableViewCell: UITableViewCell, UICollectionViewDataSource, UICollectionViewDelegate {
     
-    var imageCat = ["sunscreen", "sunscreen", "sunscreen"]
-    var labelCat = ["sunscreen", "sunscreen", "sunscreen"]
+    var imageCat = ["cleanser", "micellarWater", "facialWash", "exfoliatingToner", "hydratingToner", "essence", "serum", "eyecream", "eyeserum", "moisturizer", "sunscreen"]
+    var labelCat = ["Cleanser", "Micellar Water", "Facial Wash", "Exfolitating Toner", "Hydrating Toner", "Essence", "Face Serum", "Eyecream", "Eyeserum", "Moisturizer", "Sunscreen"]
+
     
     @IBOutlet weak var skincareCatCollection: UICollectionView!
     

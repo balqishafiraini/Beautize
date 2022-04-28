@@ -61,7 +61,7 @@ class SkincareViewController: UIViewController, UITableViewDelegate, UITableView
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.section == 0 {
-            return 200
+            return 220
         }
         else {
             let countItem = productImage.count/2
