@@ -11,7 +11,8 @@ class SkincareProCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var skincareProIcon: UIImageView!
     
     @IBOutlet weak var skincareProCategory: UILabel!
-    @IBOutlet weak var skincareProDesc: UILabel!
+    
+    @IBOutlet weak var skincareProDesc: UITextView!
     @IBOutlet weak var backgroundWhite: UIImageView! {
         didSet {
             backgroundWhite.layer.cornerRadius = 20

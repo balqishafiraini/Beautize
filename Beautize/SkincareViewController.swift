@@ -11,6 +11,8 @@ class SkincareViewController: UIViewController, UITableViewDelegate, UITableView
 
     @IBOutlet weak var skincareTable: UITableView!
     
+    @IBOutlet weak var searchbar: UISearchBar!
+    
     var productImage = ["sunscreen", "sunscreen", "sunscreen", "sunscreen", "sunscreen", "sunscreen", "sunscreen", "sunscreen", "sunscreen", "sunscreen", "sunscreen", "sunscreen", "sunscreen", "sunscreen"]
     
     var flagCollection: SkincareProTableViewCell?

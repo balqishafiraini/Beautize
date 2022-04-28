@@ -17,11 +17,8 @@ class AddViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDat
     @IBOutlet weak var nameField: UITextField!
     
     @IBOutlet weak var categoryPicker: UIPickerView!
-    
-    @IBOutlet weak var showPict: UIImageView!
-    @IBOutlet weak var addPict: UIButton!
-    var imagePicker = UIImagePickerController()
 
+    
     
     var pickerData: [String] = [String]()
     
@@ -54,27 +51,6 @@ class AddViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDat
         category = pickerData[row]
         print("BISA \(category)")
     }
-    
-    
-    @IBAction func uploadPhoto(_ sender: Any) {
-        if UIImagePickerController.isSourceTypeAvailable(.savedPhotosAlbum){
-                    print("Button capture")
-
-                    imagePicker.delegate = self
-                    imagePicker.sourceType = .savedPhotosAlbum
-                    imagePicker.allowsEditing = false
-
-                    present(imagePicker, animated: true, completion: nil)
-                }
-    }
-    
-    func imagePickerController(picker: UIImagePickerController!, didFinishPickingImage image: UIImage!, editingInfo: NSDictionary!){
-            self.dismiss(animated: true, completion: { () -> Void in
-
-            })
-
-            showPict.image = image
-        }
     
     @IBAction func addProduct(_ sender: Any) {
         let brand = brandField.text

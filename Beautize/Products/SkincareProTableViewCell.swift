@@ -64,7 +64,6 @@ class SkincareProTableViewCell: UITableViewCell, UICollectionViewDelegate, UICol
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cellSkincarePro = (collectionView.dequeueReusableCell(withReuseIdentifier: "SkincareProItemCellID", for: indexPath) as? SkincareProCollectionViewCell)!
-        cellSkincarePro.skincareProIcon.image = UIImage(named: productImage[indexPath.row])
         cellSkincarePro.skincareProName.text = products[indexPath.row].brand
         cellSkincarePro.skincareProDesc.text = products[indexPath.row].name
         cellSkincarePro.skincareProCategory.text = products[indexPath.row].category
